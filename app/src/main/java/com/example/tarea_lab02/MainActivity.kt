@@ -64,6 +64,7 @@ fun GreetingCard() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center )
     {
+        Spacer(modifier = Modifier.height(140.dp))
         Box(
             modifier = Modifier
                 .size(100.dp)
@@ -85,13 +86,8 @@ fun GreetingCard() {
             color = Color(0xFF3A5F41), // Verde oscuro
             fontWeight = FontWeight.Bold)
 
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(140.dp))
 
-
-
-        Spacer(modifier = Modifier.height(16.dp))
-        
-        Spacer(modifier = Modifier.height(16.dp))
         Column(
             modifier = Modifier.padding(bottom = 48.dp),
             horizontalAlignment = Alignment.Start // Centramos todo horizontalmente
@@ -173,7 +169,9 @@ fun GreetingCard() {
 
 
 
-@Preview(showBackground = true)
+@Preview(showBackground = true,
+    showSystemUi =true,
+    name = "My Preview")
 @Composable
 fun PreviewGreetingCard() {
     GreetingCard()
